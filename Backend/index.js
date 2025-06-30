@@ -22,16 +22,23 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+import cors from "cors";
+
+// Add ALL frontend domains you use
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://recruitix-frontend.vercel.app',],
+  origin: [
+    "http://localhost:5173",                        // Local
+    "https://recruitix.vercel.app",        // First Vercel domain
+    "https://recruitix-shanu-birlas-projects.vercel.app", // Second
+    "https://recruitix-git-main-shanu-birlas-projects.vercel.app"                  // Custom Vercel domain
+  ],
   credentials: true
 };
 
-
 app.use(cors(corsOptions));
 
 
-app.use(cors(corsOptions));
+
 
 const PORT = process.env.PORT || 8000;
 

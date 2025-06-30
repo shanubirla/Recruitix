@@ -1,5 +1,5 @@
-import { setAllAppliedJobs } from "@/redux/jobSlice";
-import { APPLICATION_API_END_POINT } from "@/constants";
+import { setAllAppliedJobs } from "@/redux/JobSlice.jsx";
+import { APPLICATION_API_END_POINT } from "@/constants.js";
 import axios from "axios"
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"

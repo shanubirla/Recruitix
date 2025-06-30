@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-import Navbar from './shared/Navbar';
-import HeroSection from './HeroSection';
+import Navbar from './shared/Navbar.jsx';
+import HeroSection from './HeroSection.jsx';
 import CategoryCarousel from './CategoryCarouser';
-import LatestJobs from './LatestJobs';
-import Footer from './Footer';
-import useGetAllJobs from '@/hooks/useGetAllJobs';
+import LatestJobs from './LatestJobs.jsx';
+import Footer from './Footer.jsx';
+import useGetAllJobs from '@/Hooks/useGetAllJobs.jsx';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import FeedbackForm from './FeedbackForm';
-import RecentFeedbacks from './RecentFeedbacks';
+import FeedbackForm from './FeedbackForm.jsx';
+import RecentFeedbacks from './RecentFeedbacks.jsx';
 
 const Home = () => {
   useGetAllJobs();

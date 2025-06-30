@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-import { REF_API_END_POINT } from "@/constants";
+import { REF_API_END_POINT } from "@/constants.js";
 
 const ReferralForm = ({ referralId, amount, onClose }) => {
   const navigate = useNavigate();

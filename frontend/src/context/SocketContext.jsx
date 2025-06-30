@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import io from 'socket.io-client';
 import { useCallback } from 'react';
-import { BACKEND_END_POINT } from '@/constants';
+import { BACKEND_END_POINT } from '@/constants.js';
 
 const SocketContext = createContext();
 

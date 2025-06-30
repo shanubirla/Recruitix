@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import ReferralForm from './ReferralForm';
+import ReferralForm from './ReferralForm.jsx';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 

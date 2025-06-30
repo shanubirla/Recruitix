@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import LatestJobCards from './LatestJobCards';
+import LatestJobCards from './LatestJobCards.jsx';
 import { useSelector } from 'react-redux';
 
 const LatestJobs = () => {

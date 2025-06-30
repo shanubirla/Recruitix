@@ -8,12 +8,12 @@ import {
   TableHeader,
   TableRow,
 } from '../ui/table';
-import { CHAT_API_END_POINT } from '@/constants';
+import { CHAT_API_END_POINT } from '@/constants.js';
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 import { MoreHorizontal, FileText, CheckCircle2, XCircle, Download, MessageCircle } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { toast } from 'sonner';
-import { APPLICATION_API_END_POINT } from '@/constants';
+import { APPLICATION_API_END_POINT } from '@/constants.js';
 import axios from 'axios';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';

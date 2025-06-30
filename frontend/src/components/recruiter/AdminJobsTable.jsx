@@ -13,7 +13,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 import { Delete, Edit, Eye, MoreHorizontal } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { JOB_API_END_POINT } from '@/constants';
+import { JOB_API_END_POINT } from '@/constants.js';
 import axios from 'axios';
 import { toast } from 'sonner';
 import { Badge } from '../ui/badge';

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
-import { CHAT_API_END_POINT } from './constants';
+import { CHAT_API_END_POINT } from './constants.js';
 
 const ChatSidebar = ({ onSelectChat, selectedChatId }) => {
   const { user } = useSelector((store) => store.auth);

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Card from './Card';
-import Navbar from './shared/Navbar';
+import Card from './Card.jsx';
+import Navbar from './shared/Navbar.jsx';
 
 const NewsList = () => {
   

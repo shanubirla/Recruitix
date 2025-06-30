@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import ReferralCard from '../components/ReferralCard';
-import { REF_API_END_POINT } from '@/constants';
-import Navbar from '../components/shared/Navbar';
-import Footer from '../components/Footer';
+import ReferralCard from './ReferralCard.jsx';
+import { REF_API_END_POINT } from '@/constants.js';
+import Navbar from '../components/shared/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 import { Search, Loader2 } from 'lucide-react';
 
 const GetReferralPage = () => {

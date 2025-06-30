@@ -5,9 +5,9 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearSca
 import { ADMIN_API_END_POINT, USER_API_END_POINT, APPLICATION_API_END_POINT } from "@/constants";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { setAllApplicants } from "@/redux/applicationSlice";
+import { setAllApplicants } from "@/redux/applicationSlice.js";
 import { RefreshCw, Loader2, Users, Briefcase, Bookmark, FileText, Building } from "lucide-react";
-import Navbar from "../shared/Navbar";
+import Navbar from "../shared/Navbar.jsx";
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement);
 

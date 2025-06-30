@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useSocket } from './context/SocketContext';
+import { useSocket } from './context/SocketContext.jsx';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
-import { MSG_API_END_POINT, USER_API_END_POINT } from './constants';
+import { MSG_API_END_POINT, USER_API_END_POINT } from './constants.js';
 
 const ChatInterface = ({ chatId, receiverId, listingId }) => {
   const { socket, isUserOnline, isUserTyping, markMessagesAsRead, sendTypingIndicator } = useSocket();

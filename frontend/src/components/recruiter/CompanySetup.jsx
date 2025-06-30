@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../shared/Navbar';
+import Navbar from '../shared/Navbar.jsx';
 import { Button } from '../ui/button';
 import { ArrowLeft, Loader2, Globe, MapPin, Building2, Image } from 'lucide-react';
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import axios from 'axios';
-import { COMPANY_API_END_POINT } from '@/constants';
+import { COMPANY_API_END_POINT } from '@/constants.js';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'sonner';
 import { useSelector } from 'react-redux';
-import useGetCompanyById from '@/hooks/useGetCompanyById';
+import useGetCompanyById from '@/Hooks/useGetCompanyById.jsx';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const CompanySetup = () => {

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './shared/Navbar';
+import Navbar from './shared/Navbar.jsx';
 import { Contact, Mail, Pen, Download, Calendar, Briefcase, Star, Upload } from 'lucide-react';
-import AppliedJobTable from './AppliedJobTable';
-import UpdateProfileDialog from './UpdateProfileDialog';
+import AppliedJobTable from './AppliedJobTable.jsx';
+import UpdateProfileDialog from './UpdateProfileDialog.jsx';
 import { useSelector } from 'react-redux';
-import useGetAppliedJobs from '@/hooks/useGetAppliedJobs';
-import Footer from './Footer';
+import useGetAppliedJobs from '@/Hooks/useGetAppliedJobs.jsx';
+import Footer from './Footer.jsx';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Profile = () => {

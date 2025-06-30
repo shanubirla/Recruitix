@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Star, MessageCircle, RefreshCw, Tag } from "lucide-react";
-import { FEED_API_END_POINT } from "@/constants";
+import { FEED_API_END_POINT } from "@/constants.js";
 
 const RecentFeedbacks = () => {
   const [feedbacks, setFeedbacks] = useState([]);

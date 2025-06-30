@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './shared/Navbar'
-import FilterCard from './FilterCard'
-import Job from './Job';
+import Navbar from './shared/Navbar.jsx'
+import FilterCard from './FilterCard.jsx'
+import Job from './Job.jsx';
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
-import Footer from './Footer';
+import Footer from './Footer.jsx';
 
 
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { CONTACT_API_END_POINT } from "@/constants";
+import { CONTACT_API_END_POINT } from "@/constants.js";
 import { Loader2 } from "lucide-react";
 
 const ContactForm = () => {

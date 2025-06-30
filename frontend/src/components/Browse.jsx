@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import Navbar from './shared/Navbar';
-import Job from './Job';
+import Navbar from './shared/Navbar.jsx';
+import Job from './Job.jsx';
 import { useDispatch, useSelector } from 'react-redux';
-import { setSearchedQuery } from '@/redux/jobSlice';
-import useGetAllJobs from '@/hooks/useGetAllJobs';
-import Footer from './Footer';
+import { setSearchedQuery } from '@/redux/JobSlice.jsx';
+import useGetAllJobs from '@/Hooks/useGetAllJobs.jsx';
+import Footer from './Footer.jsx';
 import { Loader2 } from 'lucide-react';
 
 const Browse = () => {

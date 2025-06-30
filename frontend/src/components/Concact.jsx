@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from './shared/Navbar';
-import Footer from './Footer';
-import ContactForm from './ContactForm';
+import Navbar from './shared/Navbar.jsx';
+import Footer from './Footer.jsx';
+import ContactForm from './ContactForm.jsx';
 
 const Contact = () => {
     return (

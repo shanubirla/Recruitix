@@ -1,33 +1,33 @@
 import React, { Suspense, lazy } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import RecentFeedbacks from './components/RecentFeedbacks';
-import FeedbackForm from './components/FeedbackForm';
+import RecentFeedbacks from './components/RecentFeedbacks.jsx';
+import FeedbackForm from './components/FeedbackForm.jsx';
 
 // Lazy-loaded components
 import Navbar from './components/shared/Navbar';
-const Login = lazy(() => import('./components/auth/Login'));
-const Signup = lazy(() => import('./components/auth/Singup'));
-const Home = lazy(() => import('./components/Home'));
-const Jobs = lazy(() => import('./components/Jobs'));
-const Browse = lazy(() => import('./components/Browse'));
-const Profile = lazy(() => import('./components/Profile'));
-const JobDetail = lazy(() => import('./components/JobDetail'));
-const Companies = lazy(() => import('./components/recruiter/Companies'));
-const CompanyCreate = lazy(() => import('./components/recruiter/CompanyCreate'));
-const CompanySetup = lazy(() => import('./components/recruiter/CompanySetup'));
-const AdminJobs = lazy(() => import('./components/recruiter/AdminJobs'));
-const PostJob = lazy(() => import('./components/recruiter/PostJob'));
-const Applicants = lazy(() => import('./components/recruiter/Applicants'));
-const ProtectedRoute = lazy(() => import('./components/recruiter/ProtectedRoute'));
-const DashBoard = lazy(() => import('./components/Admin/DashBoard'));
-const AboutUs = lazy(() => import('./components/ui/AboutUs'));
-const Contact = lazy(() => import('./components/Concact'));
-const Footer = lazy(() => import('./components/Footer'));
-const NewsList = lazy(() => import('./components/NewsList'));
-const ReferralPage = lazy(() => import('./components/GetReferralPage'));
-const ContactForm = lazy(() => import('./components/ContactForm'));
-const ChatPage = lazy(() => import('./ChatPage'));
-const AdminAddReferral = lazy(() => import('./components/Admin/AdminAddReferral'));
+const Login = lazy(() => import('./components/auth/Login.jsx'));
+const Signup = lazy(() => import('./components/auth/Singup.jsx'));
+const Home = lazy(() => import('./components/Home.jsx'));
+const Jobs = lazy(() => import('./components/Jobs.jsx'));
+const Browse = lazy(() => import('./components/Browse.jsx'));
+const Profile = lazy(() => import('./components/Profile.jsx'));
+const JobDetail = lazy(() => import('./components/JobDetail.jsx'));
+const Companies = lazy(() => import('./components/recruiter/Companies.jsx'));
+const CompanyCreate = lazy(() => import('./components/recruiter/CompanyCreate.jsx'));
+const CompanySetup = lazy(() => import('./components/recruiter/CompanySetup.jsx'));
+const AdminJobs = lazy(() => import('./components/recruiter/AdminJobs.jsx'));
+const PostJob = lazy(() => import('./components/recruiter/PostJob.jsx'));
+const Applicants = lazy(() => import('./components/recruiter/Applicants.jsx'));
+const ProtectedRoute = lazy(() => import('./components/recruiter/ProtectedRoute.jsx'));
+const DashBoard = lazy(() => import('./components/Admin/DashBoard.jsx'));
+const AboutUs = lazy(() => import('./components/ui/AboutUs.jsx'));
+const Contact = lazy(() => import('./components/Concact.jsx'));
+const Footer = lazy(() => import('./components/Footer.jsx'));
+const NewsList = lazy(() => import('./components/NewsList.jsx'));
+const ReferralPage = lazy(() => import('./components/GetReferralPage.jsx'));
+const ContactForm = lazy(() => import('./components/ContactForm.jsx'));
+const ChatPage = lazy(() => import('./ChatPage.jsx'));
+const AdminAddReferral = lazy(() => import('./components/Admin/AdminAddReferral.jsx'));
 
 
 const appRouter = createBrowserRouter([

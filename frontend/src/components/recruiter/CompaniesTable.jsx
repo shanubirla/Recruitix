@@ -14,7 +14,7 @@ import { Edit, Trash2, MoreHorizontal, Building2 } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { COMPANY_API_END_POINT } from '@/constants';
+import { COMPANY_API_END_POINT } from '@/constants.js';
 import { toast } from 'sonner';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Navbar from '../shared/Navbar';
+import Navbar from '../shared/Navbar.jsx';
 import { Button } from '../ui/button';
 import { ArrowLeft, Loader2, Briefcase, MapPin, DollarSign, Clock, FileText } from 'lucide-react';
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import axios from 'axios';
-import { JOB_API_END_POINT } from '@/constants';
+import { JOB_API_END_POINT } from '@/constants.js';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { useSelector } from 'react-redux';

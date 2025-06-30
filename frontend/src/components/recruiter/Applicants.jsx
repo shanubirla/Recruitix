@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import Navbar from '../shared/Navbar';
+import Navbar from '../shared/Navbar.jsx';
 import ApplicantsTable from './ApplicantsTable';
 import axios from 'axios';
-import { APPLICATION_API_END_POINT } from '@/constants';
+import { APPLICATION_API_END_POINT } from '@/constants.js';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setAllApplicants } from '@/redux/applicationSlice';
+import { setAllApplicants } from '@/redux/applicationSlice.js';
 import { toast } from 'sonner';
 import { Briefcase, Users } from 'lucide-react';
 

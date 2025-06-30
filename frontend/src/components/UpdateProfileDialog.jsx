@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Loader2, Upload, User, FileText, Award, X } from 'lucide-react';
 import axios from 'axios';
-import { USER_API_END_POINT } from '@/constants';
-import { setUser } from '@/redux/authSlice';
+import { USER_API_END_POINT } from '@/constants.js';
+import { setUser } from '@/redux/authSlice.js';
 import { toast } from 'sonner';
 
 const UpdateProfileDialog = ({ open, setOpen }) => {

@@ -11,8 +11,8 @@ import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 import { Button } from '../ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { toast } from 'sonner';
-import { USER_API_END_POINT } from '@/constants';
-import { setUser } from '@/redux/authSlice';
+import { USER_API_END_POINT } from '@/constants.js';
+import { setUser } from '@/redux/authSlice.js';
 
 const Navbar = () => {
     const { user } = useSelector((store) => store.auth);

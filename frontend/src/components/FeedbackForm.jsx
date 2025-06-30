@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Star, Send, MessageSquare, User, AlertCircle } from "lucide-react";
 import { useSelector } from "react-redux";
-import { FEED_API_END_POINT } from "@/constants";
+import { FEED_API_END_POINT } from "@/constants.js";
 
 const FeedbackForm = () => {
   const {user}=useSelector((store)=>store.auth);

@@ -23,9 +23,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-  origin: ['http://localhost:5173', 'http://frontend:80'],
-  credentials: true,
+  origin: ['http://localhost:5173', 'https://recruitix-frontend.vercel.app',],
+  credentials: true
 };
+
 
 app.use(cors(corsOptions));
 

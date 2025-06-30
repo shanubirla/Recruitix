@@ -25,17 +25,24 @@ app.use(cookieParser());
 
 
 // Add ALL frontend domains you use
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://recruitix.vercel.app",
+  "https://recruitix-shanu-birlas-projects.vercel.app",
+  "https://recruitix-git-main-shanu-birlas-projects.vercel.app"
+];
+
 const corsOptions = {
-  origin: [
-    "http://localhost:5173", // local dev
-    "https://recruitix.vercel.app", // main Vercel domain
-    "https://recruitix-shanu-birlas-projects.vercel.app", // project preview
-    "https://recruitix-git-main-shanu-birlas-projects.vercel.app" // git branch preview
-  ],
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
 };
 
-app.use(cors(corsOptions));
 
 
 
@@ -67,11 +74,12 @@ import { Server } from "socket.io";
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND,
+    origin: allowedOrigins,
     methods: ['GET', 'POST'],
     credentials: true,
   },
 });
+app.options('*', cors(corsOptions));
 
 
 const onlineUsers = new Map();
